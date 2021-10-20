@@ -39,6 +39,6 @@ export const getStaticProps = async () => {
       vaccinations,
       deaths      
     },
-    revalidate: 60 * 60 * 6,
+    revalidate: 60,
   }
 }

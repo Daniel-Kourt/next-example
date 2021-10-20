@@ -66,7 +66,7 @@ const TotalData = ({cases, vaccinations, deaths}) => {
                         width={100}                        
                     />  */}
                     <p className="pt-4 text-base text-white">
-                        Loading data
+                        Loading data . . .
                     </p>
                 </div>    
             }
