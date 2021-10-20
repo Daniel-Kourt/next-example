@@ -5,9 +5,9 @@ import { count_vaccinations_A, count_vaccinations_B } from '../utils/vacCalculat
 import { count_cases, cases_by_date } from '../utils/casesCalculations';
 import { total_deaths, deaths_by_date } from '../utils/deathsCalculations';
 
-const TotalData = ({cases, vaccinations, deaths}) => {
+const TotalData = () => {
 
-    //const {casesContext: cases, deathsContext: deaths, vaccinsContext: vaccinations } = useAppContext();
+    const {casesContext: cases, deathsContext: deaths, vaccinsContext: vaccinations } = useAppContext();
     
     return (
         <> 
@@ -66,7 +66,7 @@ const TotalData = ({cases, vaccinations, deaths}) => {
                         width={100}                        
                     />  */}
                     <p className="pt-4 text-base text-white">
-                        Loading data . . .
+                        Loading data . .  ! !
                     </p>
                 </div>    
             }
