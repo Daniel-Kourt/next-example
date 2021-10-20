@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const notFound = () => {
+const NotFound = () => {
 
     const router = useRouter();
 
@@ -25,4 +25,4 @@ const notFound = () => {
     )
 }
 
-export default notFound
+export default NotFound
