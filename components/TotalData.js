@@ -5,9 +5,9 @@ import { count_vaccinations_A, count_vaccinations_B } from '../utils/vacCalculat
 import { count_cases, cases_by_date } from '../utils/casesCalculations';
 import { total_deaths, deaths_by_date } from '../utils/deathsCalculations';
 
-const TotalData = () => {
+const TotalData = ({cases, vaccinations, deaths}) => {
 
-    const {casesContext: cases, deathsContext: deaths, vaccinsContext: vaccinations } = useAppContext();
+    //const {casesContext: cases, deathsContext: deaths, vaccinsContext: vaccinations } = useAppContext();
     
     return (
         <> 

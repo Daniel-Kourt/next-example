@@ -3,7 +3,7 @@ import styles from '../styles/Deaths.module.css'
 
 const deaths = ({deaths}) => {
 
-    console.log(deaths);
+    //console.log(deaths);
 
     return (
         <>
