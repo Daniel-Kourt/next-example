@@ -1,13 +1,12 @@
-//import Loader from "react-loader-spinner";
-//import { DataContext } from '../../context/DataContextProvider';
-import { useAppContext } from '../context/state';
+import Loader from "react-loader-spinner"
+//import { useAppContext } from '../context/state';
 import { count_vaccinations_A, count_vaccinations_B } from '../utils/vacCalculations';
 import { count_cases, cases_by_date } from '../utils/casesCalculations';
 import { total_deaths, deaths_by_date } from '../utils/deathsCalculations';
 
-const TotalData = () => {
+const TotalData = ({ cases, vaccinations, deaths }) => {
 
-    const {casesContext: cases, deathsContext: deaths, vaccinsContext: vaccinations } = useAppContext();
+    //const {casesContext: cases, deathsContext: deaths, vaccinsContext: vaccinations } = useAppContext();
     
     return (
         <> 
@@ -59,12 +58,12 @@ const TotalData = () => {
                 </div>
             :
                 <div className="min-h-screen flex flex-col items-center justify-center">
-                    {/* <Loader
+                    <Loader
                         type="Puff"
                         color="#a78bfa"
                         height={100}
                         width={100}                        
-                    />  */}
+                    /> 
                     <p className="pt-4 text-base text-white">
                         Loading data . .  ! !
                     </p>
